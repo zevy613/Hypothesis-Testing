@@ -1,0 +1,24 @@
+Discrete v.s. Continuous
+discrete distribution -> vertical lines & gaps in between the bars of the histogram
+
+Skew
+more of the values are grouped to the right -> negatively skewed
+
+more of the values are grouped to the left -> positively skewed
+
+
+
+Mesokurtic (values cluster in the middle of the distribution - normal)
+
+Leptokurtic ("pointy", values cluster in the peak of the distribution - positive)
+
+Platykurtic ("flat", values cluster in the tails of the distribution - negative).
+
+Using the Pearson calculation,
+
+Mesokurtic (Kurtosis ~3)
+
+Leptokurtic (Kurtosis >3)
+
+Platykurtic (Kurtosis < 3)
+
