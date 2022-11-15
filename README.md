@@ -84,11 +84,15 @@ First we need to split the data into two groups. One for Male and Female and the
     p = 0.0062765550120107375
 Explanation: Because we have a significant p value we reject our null hypothesis and support our alternative hypthesis. We conclude that there is a difference between the rate of males and females becoming smokers. It appears that males are more likely to be smokers. 
 
-sex       |female  | male
+![png](Visuals/gender_smoke.jpg)
+
+
+
+sex          |female     | male
 
 non-smoker|0.826284| 0.764444
 
-smoker    |0.173716| 0.235556
+smoker       |0.173716| 0.235556
 
 
 ### **Do different regions have different charges, on average?**
