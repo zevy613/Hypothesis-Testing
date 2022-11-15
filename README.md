@@ -14,7 +14,10 @@ This data set has 7 features and 1,337 rows. The key features are listed below.
  - region
  - charges
  
-### **Do some MPAA Ratings make more revenue than others?**
+## Hypothesis
+
+
+### **Q1: Do some MPAA Ratings make more revenue than others?**
 **Hypothesis**
 
  - $H_0$: There is no difference between smokers and non smokers regarding insurance charges.
@@ -28,11 +31,13 @@ Samples: 2 samples/groups
 Test : 2 Sample T-Test
 
 Assumptions: 
-    - No significant outliers 
-    - Normality 
-    - Equal Variance 
+
+ - No significant outliers 
+ - Normality 
+ - Equal Variance 
 
 **Preperation**
+
 We first split the data into two groups. One of the charges for smokers and one for the charges for non-smokers
 
 **Outliers Removed**
@@ -53,8 +58,9 @@ Explanation: In this case we have a significant p-value which means we reject ou
 
 ![png](Visuals/charges_barplot.png)
 
-### **Are men more likely to smoke than women?**
+### **Q2: Are men more likely to smoke than women?**
 **Hypothesis**
+
 $H_0$: Men and women are equally likely to be smokers.
 
 $H_1$: There is a difference between Men and women in there likelyhood of being a smoker. 
@@ -70,6 +76,7 @@ Assumptions :
  - Their outcomes are independent.
  
 **Preperation**
+
 First we need to split the data into two groups. One for Male and Female and then whether they are a smoker.
 
 **Final Conclusion**
@@ -77,11 +84,12 @@ First we need to split the data into two groups. One for Male and Female and the
     p = 0.0062765550120107375
 Explanation: Because we have a significant p value we reject our null hypothesis and support our alternative hypthesis. We conclude that there is a difference between the rate of males and females becoming smokers. It appears that males are more likely to be smokers. 
 
-sex        female   male
+sex       |female  | male
 
-non-smoker 0.826284 0.764444
+non-smoker|0.826284| 0.764444
 
-smoker     0.173716 0.235556
+smoker    |0.173716| 0.235556
+
 
 ### **Do different regions have different charges, on average?**
 $H_0$: There is no difference in charges between regions.
@@ -100,6 +108,7 @@ Assumptions :
  - Normality
  
 **Preperation**
+
 We first split the data into the four redions in our dataset; northwest, northeast, southwest southeast.
 
 **Outliers Removed**
@@ -109,13 +118,14 @@ We first split the data into the four redions in our dataset; northwest, northea
  - Region northeast -> Number of outliers :  4
  
 **Normality Assumption**
+
             n       p               test stat   sig
 southwest	317.0	7.728611e-22	97.223886	True
 southeast	362.0	1.936990e-13	58.544942	True
 northwest	317.0	3.547435e-19	84.965784	True
 northeast	320.0	3.557877e-17	75.749565	True
 
-Despite having failed the normal test we can continue as planed because all of our groups contain more then 20 samples
+ - Despite having failed the normal test we can continue as planed because all of our groups contain more then 20 samples
 
 **Equal Variance**
  - Because we failed the test of equal variance (a.k.a levenes test) we have to perform a t-test. As a result we need to perform a Kruskal-Wallis teset instead of ANOVA test.
@@ -128,3 +138,7 @@ Despite having failed the normal test we can continue as planed because all of o
 Explanation: In this case we do not have a significant p-value which means we fail to reject our null hypothesis or we failed to conclude that its NOT due to random chance. 
 
 ![png](Visuals/chargesbyregion_barplot.png)
+
+
+## For further information
+zevy613@gmail.com
