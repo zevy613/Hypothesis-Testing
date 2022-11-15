@@ -87,14 +87,6 @@ Explanation: Because we have a significant p value we reject our null hypothesis
 ![png](Visuals/gender_smoke.jpg)
 
 
-
-sex          |female     | male
-
-non-smoker|0.826284| 0.764444
-
-smoker       |0.173716| 0.235556
-
-
 ### **Do different regions have different charges, on average?**
 $H_0$: There is no difference in charges between regions.
 
@@ -122,18 +114,12 @@ We first split the data into the four redions in our dataset; northwest, northea
  - Region northeast -> Number of outliers :  4
  
 **Normality Assumption**
-
-            n       p               test stat   sig
-southwest	317.0	7.728611e-22	97.223886	True
-southeast	362.0	1.936990e-13	58.544942	True
-northwest	317.0	3.547435e-19	84.965784	True
-northeast	320.0	3.557877e-17	75.749565	True
+![png](Visuals/regions-p.jpg)
 
  - Despite having failed the normal test we can continue as planed because all of our groups contain more then 20 samples
 
 **Equal Variance**
  - Because we failed the test of equal variance (a.k.a levenes test) we have to perform a t-test. As a result we need to perform a Kruskal-Wallis teset instead of ANOVA test.
- 
 
 
 **Final Conclusion**
