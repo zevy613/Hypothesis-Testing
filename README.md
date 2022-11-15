@@ -14,7 +14,7 @@ This data set has 7 features and 1,337 rows. The key features are listed below.
  - region
  - charges
  
-## Hypothesis
+## Hypotheses
 
 
 ### **Q1: Do some MPAA Ratings make more revenue than others?**
@@ -87,7 +87,7 @@ Explanation: Because we have a significant p value we reject our null hypothesis
 ![png](Visuals/gender_smoke.jpg)
 
 
-### **Do different regions have different charges, on average?**
+### **Q3: Do different regions have different charges, on average?**
 $H_0$: There is no difference in charges between regions.
 
 $H_1$: There is a difference in charges, on average, between regions.
@@ -108,10 +108,10 @@ Assumptions :
 We first split the data into the four redions in our dataset; northwest, northeast, southwest southeast.
 
 **Outliers Removed**
- - Region southwest -> Number of outliers :  8
- - Region southeast -> Number of outliers :  2
- - Region northwest -> Number of outliers :  7
- - Region northeast -> Number of outliers :  4
+ - Region southwest -> Number of outliers removed :  8
+ - Region southeast -> Number of outliers removed :  2
+ - Region northwest -> Number of outliers removed :  7
+ - Region northeast -> Number of outliers removed :  4
  
 **Normality Assumption**
 ![png](Visuals/regions-p.jpg)
@@ -125,7 +125,7 @@ We first split the data into the four redions in our dataset; northwest, northea
 **Final Conclusion**
 
     KruskalResult(statistic=4.622506584464645, pvalue=0.20161983372311595)
-Explanation: In this case we do not have a significant p-value which means we fail to reject our null hypothesis or we failed to conclude that its NOT due to random chance. 
+Explanation: In this case we do not have a significant p-value which means we fail to reject our null hypothesis or we failed to conclude that our null hypothesis is NOT due to random chance. 
 
 ![png](Visuals/chargesbyregion_barplot.png)
 
